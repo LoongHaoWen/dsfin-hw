@@ -1,0 +1,16 @@
+﻿
+=== ann 400
+
+=== ann 200
+
+pdfs []
+
+=== get 200
+{"version":"0043022f00218691f961e278440ca9ab","result":{"pages":1,"data":[{"ORG_CODE":"10000140837","INFO_CODE":"AN202605171822383834","DECLARE_ORG":"长鑫科技集团股份有限公司","UPDATE_DATE":"2026-05-20 00:00:00"}],"count":1},"success":true,"message":"ok","code":0}
+pdfs []
+
+SSE https://query.sse.com.cn/commonSoaQuery.do?isPagination=true&sqlId=SH_XM_LB&keyword=长鑫科技 200 10652
+
+SSE https://query.sse.com.cn/commonQuery.do?jsonCallBack=&isPagination=true&sqlId=GP_GPZCZ_SH_XM_LB_GG&keyword=长鑫 200 487
+{"actionErrors":[],"actionMessages":[],"fieldErrors":{},"isPagination":"true","jsonCallBack":"","locale":"en","pageHelp":{"beginPage":1,"cacheSize":5,"data":null,"endDate":null,"endPage":null,"objectResult":null,"pageCount":null,"pageNo":1,"pageSize":10,"pageSizeWithOutLimit":10,"searchDate":null,"sort":null,"startDate":null,"total":0},"pageNo":null,"pageSize":null,"queryDate":"","result":null,"securityCode":"","sqlId":"GP_GPZCZ_SH_XM_LB_GG","texts":null,"type":"","validateCode":""}
+cninfo err '长鑫科技'

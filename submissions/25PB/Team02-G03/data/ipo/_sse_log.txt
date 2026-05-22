@@ -1,0 +1,88 @@
+﻿len 8924
+keys dict_keys(['actionErrors', 'actionMessages', 'fieldErrors', 'isPagination', 'jsonCallBack', 'locale', 'pageHelp', 'pageNo', 'pageSize', 'queryDate', 'result', 'securityCode', 'sqlId', 'texts', 'type', 'validateCode'])
+pageHelp type <class 'dict'>
+rows 1
+{
+  "updateDate": "20260520164042",
+  "planIssueCapital": 295,
+  "suspendStatus": "",
+  "wenHao": "",
+  "stockAuditName": "长鑫科技集团股份有限公司",
+  "projectType": 1,
+  "currStatus": 1,
+  "stockAuditNum": "2170",
+  "registeResult": "",
+  "intermediary": [
+    {
+      "auditId": "2170",
+      "i_intermediaryType": 1,
+      "i_intermediaryId": "0_1087",
+      "i_person": [
+        {
+          "i_p_personName": "孙雷",
+          "i_p_jobType": 21,
+          "i_p_personId": "1405468",
+          "i_p_jobTitle": "保荐业务负责人"
+        },
+        {
+          "i_p_personName": "魏先勇",
+          "i_p_jobType": 22,
+          "i_p_personId": "1405471",
+          "i_p_jobTitle": "保荐代表人A"
+        },
+        {
+          "i_p_personName": "田桂宁",
+          "i_p_jobType": 23,
+          "i_p_personId": "1405472",
+          "i_p_jobTitle": "保荐代表人B"
+        },
+        {
+          "i_p_personName": "吴迪",
+          "i_p_jobType": 24,
+          "i_p_personId": "1405473",
+          "i_p_jobTitle": "项目协办人"
+        }
+      ],
+      "i_intermediaryAbbrName": "中金公司",
+      "i_intermediaryName": "中国国际金融股份有限公司",
+      "i_intermediaryOrder": 1
+    },
+    {
+      "auditId": "2170",
+      "i_intermediaryType": 1,
+      "i_intermediaryId": "0_1095",
+      "i_person": [
+        {
+          "i_p_personName": "刘乃生",
+          "i_p_jobType": 21,
+          "i_p_personId": "1405474",
+          "i_p_jobTitle": "保荐业务负责人"
+        },
+        {
+          "i_p_personName": "董军峰",
+          "i_p_jobType": 22,
+          "i_p_personId": "1405477",
+          "i_p_jobTitle": "保荐代表人A"
+        },
+        {
+          "i_p_personName": "廖小龙",
+          "i_p_jobType": 23,
+          "i_p_personId": "1405478",
+          "i_p_jobTitle": "保荐代表人B"
+        },
+        {
+          "i_p_personName": "汪鹏飞",
+          "i_p_jobType": 24,
+          "i_p_personId": "1405479",
+          "i_p_jobTitle": "项目协办人"
+        }
+      ],
+      "i_intermediaryAbbrName": "中信建投",
+      "i_intermediaryName": "中信建投证券股份有限公司",
+      "i_intermediaryOrder": 2
+    },
+   
+sse pdfs []
+paths []
+20260520164042
+20260520164042

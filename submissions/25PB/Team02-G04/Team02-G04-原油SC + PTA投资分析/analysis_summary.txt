@@ -1,0 +1,23 @@
+
+====================================================================
+DATA ANALYSIS CONCLUSIONS
+====================================================================
+
+1. Price Relationship
+- SC and PTA show a strong positive correlation of 0.71.
+- Crude oil is the dominant driver of PTA’s long-term price trend.
+
+2. Volatility Characteristics
+- Both assets exhibit volatility clustering and fat-tailed distribution.
+- SC has higher average volatility (0.0213) than PTA (0.0151).
+
+3. Risk Characteristics
+- Extreme volatility (>±3%) accounts for 14.47% for SC.
+- Extreme volatility (>±3%) accounts for 7.82% for PTA.
+
+4. Practical Implications
+- Trend trading in PTA is more reliable when SC shows clear direction.
+- High volatility periods require position reduction for risk control.
+- Hedging is recommended when crude oil prices are at high levels.
+
+====================================================================

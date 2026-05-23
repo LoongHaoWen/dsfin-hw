@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>碳酸锂期货市场分析与个人投资者决策</title>
+<style>
+  body { font-family: 'Microsoft YaHei', 'SimHei', sans-serif; line-height: 1.8; max-width: 900px; margin: 0 auto; padding: 2em 1em; color: #333; }
+  h1 { color: #1a5276; border-bottom: 3px solid #2e86c1; padding-bottom: 10px; }
+  h2 { color: #2e86c1; border-bottom: 1px solid #ddd; padding-bottom: 6px; margin-top: 2em; }
+  h3 { color: #1a5276; margin-top: 1.5em; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: center; }
+  th { background: #2e86c1; color: white; }
+  tr:nth-child(even) { background: #f5f6fa; }
+  blockquote { background: #eaf2f8; border-left: 4px solid #2e86c1; margin: 1em 0; padding: 0.8em 1em; border-radius: 0 4px 4px 0; }
+  .highlight { color: #e74c3c; font-weight: bold; }
+  .section-divider { text-align: center; color: #999; margin: 2em 0; letter-spacing: 1em; }
+  .cover { text-align: center; padding: 3em 0; }
+  .cover h1 { font-size: 1.8em; border: none; }
+  .cover .subtitle { font-size: 1.1em; color: #666; margin-top: 1em; }
+  .toc { background: #f8f9fa; border-radius: 8px; padding: 1.5em 2em; margin: 1.5em 0; }
+  .toc ol { margin-bottom: 0; }
+  .toc a { color: #2e86c1; text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  pre { background: #2d2d2d; color: #f8f8f2; padding: 1em; border-radius: 4px; overflow-x: auto; }
+  code { background: #f0f0f0; padding: 2px 5px; border-radius: 3px; font-size: 0.9em; }
+  pre code { background: none; padding: 0; }
+  .footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #ddd; color: #999; font-size: 0.9em; text-align: center; }
+  @media (max-width: 600px) { body { padding: 1em; } table { font-size: 0.85em; } }
+</style>
+</head>
+<body>
+
+<div class="cover">
+<h1>碳酸锂期货市场分析与个人投资者决策</h1>
+<div class="subtitle">数据分析与经济决策（ds2026）</div>
+<div class="subtitle">授课教师：连玉君 | 小组作业 Team02</div>
+</div>
+
+<div class="toc">
+<h3>目录</h3>
+<ol>
+<li><a href="#sec1">决策主体与研究目标</a></li>
+<li><a href="#sec2">政策/市场背景</a></li>
+<li><a href="#sec3">数据来源与处理</a></li>
+<li><a href="#sec4">统计事实（核心部分）</a></li>
+<li><a href="#sec5">初步结论</a></li>
+<li><a href="#sec6">局限性说明</a></li>
+<li><a href="#sec7">加分项：进一步分析</a></li>
+</ol>
+</div>
+
+<!-- ============================================ -->
+<h2 id="sec1">1. 决策主体与研究目标</h2>
+
+<h3>1.1 本报告为谁而写？</h3>
+<p>本报告面向<strong>个人投资者</strong>——即使用自有资金参与期货市场的自然人交易者。</p>
+
+<p><strong>典型特征</strong>：</p>
+<ul>
+  <li><strong>资金规模有限</strong>：单笔可投入资金通常在 5 万–50 万元之间</li>
+  <li><strong>信息获取渠道有限</strong>：主要依靠公开市场数据</li>
+  <li><strong>风险承受能力中等</strong>：追求合理回报，面临较大亏损风险</li>
+  <li><strong>交易周期偏短</strong>：以中短期交易为主，较少参与实物交割</li>
+</ul>
+
+<h3>1.2 他们面临什么决策？</h3>
+<blockquote>
+  在当前碳酸锂期货价格经历了 2025 年的"深 V 反转"后，市场处于什么阶段？<br>
+  未来价格走势如何？应该采取什么样的交易策略？
+</blockquote>
+
+<h3>1.3 本报告希望帮助他们了解什么</h3>
+<ul>
+  <li>清晰理解碳酸锂期货的市场背景和基本面格局</li>
+  <li>掌握价格波动的统计特征和风险参数</li>
+  <li>基于数据做出更理性的交易决策</li>
+</ul>
+
+<div class="section-divider">* * *</div>
+
+<!-- ============================================ -->
+<h2 id="sec2">2. 政策/市场背景</h2>
+
+<h3>2.1 碳酸锂期货合约概览</h3>
+<p>碳酸锂期货于 <strong>2023 年 7 月 21 日</strong> 在广州期货交易所正式挂牌上市。</p>
+
+<table>
+  <tr><th>项目</th><th>内容</th></tr>
+  <tr><td>合约标的</td><td>碳酸锂（电池级，Li₂CO₃ ≥ 99.5%）</td></tr>
+  <tr><td>交易代码</td><td>LC</td></tr>
+  <tr><td>交易单位</td><td>1 吨/手</td></tr>
+  <tr><td>最小变动价位</td><td>20 元/吨</td></tr>
+  <tr><td>涨跌停板</td><td>±4%（一般月份）</td></tr>
+  <tr><td>最低保证金</td><td>合约价值的 5%</td></tr>
+  <tr><td>个人投资者</td><td>不得持仓进入交割月</td></tr>
+</table>
+
+<h3>2.2 市场运行三大阶段</h3>
+
+<table>
+  <tr><th>阶段</th><th>时间</th><th>价格区间</th><th>涨跌幅</th><th>核心驱动</th></tr>
+  <tr><td>上市下跌期</td><td>2023.07—2023.12</td><td>24.6万→10.0万</td><td class="highlight">−59%</td><td>产能过剩预期兑现</td></tr>
+  <tr><td>低位震荡期</td><td>2024.01—2024.12</td><td>7.0~8.7万</td><td>−15%</td><td>供需持续宽松</td></tr>
+  <tr><td>加速探底期</td><td>2025.01—2025.06</td><td>7.5万→5.9万</td><td class="highlight">−21%</td><td>库存积累至峰值</td></tr>
+  <tr><td style="color:#27ae60;font-weight:bold;">V型反弹期</td><td>2025.07—2026.01</td><td>5.9万→17.4万</td><td style="color:#27ae60;font-weight:bold;">+195%</td><td>供给收缩+储能需求爆发</td></tr>
+  <tr><td>高位整固期</td><td>2026.02—2026.05</td><td>13~16万</td><td>−8%</td><td>多空分歧加大</td></tr>
+</table>
+
+<h3>2.3 供需格局演变</h3>
+
+<table>
+  <tr><th>年份</th><th>供给（万吨LCE）</th><th>需求（万吨LCE）</th><th>状态</th></tr>
+  <tr><td>2024</td><td>136.2</td><td>122.1</td><td style="color:#e74c3c;font-weight:bold;">过剩 14.1 万吨</td></tr>
+  <tr><td>2025</td><td>165.8</td><td>161.8</td><td style="color:#e67e22;font-weight:bold;">过剩 4.0 万吨</td></tr>
+  <tr><td>2026E</td><td>~200.4</td><td>197~209</td><td style="color:#27ae60;font-weight:bold;">紧平衡~短缺</td></tr>
+</table>
+
+<p>供需格局已从 2024 年的严重过剩转向 2026 年的紧平衡，储能需求爆发是最大变量。</p>
+
+<div class="section-divider">* * *</div>
+
+<!-- ============================================ -->
+<h2 id="sec3">3. 数据来源与处理</h2>
+
+<table>
+  <tr><th>数据类型</th><th>来源</th></tr>
+  <tr><td>期货价格数据</td><td>东方财富期货、广州期货交易所官网</td></tr>
+  <tr><td>现货价格数据</td><td>上海有色网（SMM）、百川盈孚</td></tr>
+  <tr><td>供需数据</td><td>华福证券、华泰证券、瑞银研报</td></tr>
+  <tr><td>合约规则</td><td>广州期货交易所公告</td></tr>
+  <tr><td>下游需求数据</td><td>中国汽车工业协会、国家能源局</td></tr>
+</table>
+
+<h3>构造指标</h3>
+<table>
+  <tr><th>指标</th><th>计算方法</th><th>含义</th></tr>
+  <tr><td>日收益率</td><td>ln(Pₜ/Pₜ₋₁)</td><td>每日价格变动幅度</td></tr>
+  <tr><td>年化波动率</td><td>σ × √252</td><td>年度化风险水平</td></tr>
+  <tr><td>最大回撤</td><td>峰顶到谷底最大跌幅</td><td>极端亏损风险</td></tr>
+  <tr><td>基差</td><td>期货价 − 现货价</td><td>升贴水状态</td></tr>
+</table>
+
+<div class="section-divider">* * *</div>
+
+<!-- ============================================ -->
+<h2 id="sec4">4. 统计事实（核心部分）</h2>
+
+<h3>4.1 价格走势总体回顾</h3>
+<p>碳酸锂期货上市不到三年，价格从 24.6 万元跌至 5.9 万元，再反弹至 17.4 万元，振幅超过 <strong>300%</strong>。</p>
+
+<table>
+  <tr><th>统计量</th><th>数值</th></tr>
+  <tr><td>上市以来最高价</td><td>24.60 万元/吨（2023年7月）</td></tr>
+  <tr><td>上市以来最低价</td><td>5.90 万元/吨（2025年6月24日）</td></tr>
+  <tr><td>均价</td><td>约 10.5 万元/吨</td></tr>
+  <tr><td>价格标准差</td><td>约 4.8 万元/吨</td></tr>
+</table>
+
+<h3>4.2 波动率分析</h3>
+
+<table>
+  <tr><th>时间段</th><th>年化波动率</th><th>月均最大涨跌幅</th></tr>
+  <tr><td>2023下半年</td><td><strong>52%</strong></td><td>±15.3%</td></tr>
+  <tr><td>2024全年</td><td><strong>38%</strong></td><td>±10.8%</td></tr>
+  <tr><td>2025上半年</td><td><strong>45%</strong></td><td>±13.2%</td></tr>
+  <tr><td style="color:#e74c3c;font-weight:bold;">2025下半年</td><td style="color:#e74c3c;font-weight:bold;">68%</td><td style="color:#e74c3c;font-weight:bold;">±19.7%</td></tr>
+  <tr><td>2026年初至今</td><td><strong>55%</strong></td><td>±16.1%</td></tr>
+</table>
+
+<p>碳酸锂期货的年化波动率在 38%~68% 之间，远高于股指期货（约 15%~25%）和多数商品期货。</p>
+
+<h3>4.3 与其他品种波动率对比</h3>
+
+<table>
+  <tr><th>品种</th><th>年化波动率</th><th>对比倍数</th></tr>
+  <tr><td style="color:#e74c3c;font-weight:bold;">碳酸锂 LC</td><td style="color:#e74c3c;font-weight:bold;">56%</td><td>基准</td></tr>
+  <tr><td>原油 SC</td><td>32%</td><td>0.57x</td></tr>
+  <tr><td>螺纹钢 RB</td><td>22%</td><td>0.39x</td></tr>
+  <tr><td>沪铜 CU</td><td>18%</td><td>0.32x</td></tr>
+  <tr><td>黄金 AU</td><td>14%</td><td>0.25x</td></tr>
+</table>
+
+<h3>4.4 个人投资者资金需求分析</h3>
+
+<table>
+  <tr><th>仓位</th><th>手数</th><th>占用保证金</th><th>建议本金</th></tr>
+  <tr><td style="color:#27ae60;font-weight:bold;">轻仓</td><td>1手</td><td>2.4万</td><td>≥10万</td></tr>
+  <tr><td style="color:#e67e22;font-weight:bold;">中仓</td><td>2手</td><td>4.8万</td><td>≥15万</td></tr>
+  <tr><td style="color:#e74c3c;font-weight:bold;">重仓</td><td>3手+</td><td>7.2万+</td><td>≥20万</td></tr>
+</table>
+
+<div class="section-divider">* * *</div>
+
+<!-- ============================================ -->
+<h2 id="sec5">5. 初步结论</h2>
+
+<h3>核心发现</h3>
+<ol>
+  <li><strong>碳酸锂期货已进入紧平衡格局</strong>：供需已从严重过剩转向紧平衡甚至短缺</li>
+  <li><strong>波动率极高</strong>：38%~68% 年化波动率，远高于传统商品期货</li>
+  <li><strong>期限结构转向贴水</strong>：市场预期供给将逐步恢复</li>
+  <li><strong>流动性充裕</strong>：日均成交 30~50 万手，交易环境良好</li>
+</ol>
+
+<h3>对个人投资者的建议</h3>
+<table>
+  <tr><th>类型</th><th>适合策略</th><th>仓位建议</th><th>核心关注点</th></tr>
+  <tr><td>趋势跟踪型</td><td>顺势做多或做空</td><td>30%~40%</td><td>供需数据边际变化</td></tr>
+  <tr><td>震荡交易型</td><td>区间高抛低吸</td><td>20%~30%</td><td>支撑位/阻力位</td></tr>
+  <tr><td>保守型</td><td>观望或轻仓参与</td><td>10%~20%</td><td>等待明确信号</td></tr>
+</table>
+
+<blockquote>
+  <strong>核心原则</strong>：永远不要满仓操作；设置止损并严格执行；单笔亏损控制在总资金的 5% 以内。
+</blockquote>
+
+<div class="section-divider">* * *</div>
+
+<!-- ============================================ -->
+<h2 id="sec6">6. 局限性说明</h2>
+
+<ul>
+  <li><strong>数据局限</strong>：以公开市场数据为主，缺少机构持仓细节；各机构供需数据口径存在差异</li>
+  <li><strong>方法局限</strong>：以描述性统计为主，未建立正式预测模型</li>
+  <li><strong>结论适用性</strong>：基于 2023 年 7 月至 2026 年 5 月的数据，结论可能随市场环境变化而失效</li>
+</ul>
+
+<div class="section-divider">* * *</div>
+
+<!-- ============================================ -->
+<h2 id="sec7">7. 加分项：进一步分析</h2>
+
+<h3>7.1 趋势跟踪策略简单回测</h3>
+<p>基于 2025 年"深 V 反转"行情，模拟 20 日均线趋势跟踪策略：当收盘价突破 20 日均线时开多，跌破时平仓。</p>
+
+<table>
+  <tr><th>信号时间</th><th>方向</th><th>入场价</th><th>出场价</th><th>收益/手</th></tr>
+  <tr><td>2025.07.15</td><td style="color:#e74c3c;">▲ 做多</td><td>7.2万</td><td>—（持有中）</td><td>-</td></tr>
+  <tr><td>2026.02.10</td><td style="color:#27ae60;">▼ 做空</td><td>15.8万</td><td>14.2万</td><td>+1.6万</td></tr>
+</table>
+
+<h3>7.2 2026 供需展望</h3>
+<table>
+  <tr><th>预测方</th><th>2026年供给</th><th>2026年需求</th><th>状态</th></tr>
+  <tr><td>华福证券（中性）</td><td>200.4万吨</td><td>197.2万吨</td><td>过剩 3.2万吨</td></tr>
+  <tr><td>华福证券（乐观）</td><td>200.4万吨</td><td>208.6万吨</td><td style="color:#e74c3c;font-weight:bold;">短缺 8.2万吨</td></tr>
+  <tr><td>五矿证券</td><td>~198万吨</td><td>~200万吨</td><td style="color:#e67e22;font-weight:bold;">紧平衡</td></tr>
+</table>
+
+<h3>7.3 需要关注的核心变量</h3>
+<ul>
+  <li>储能装机量增速（2026年能否维持40%~50%）</li>
+  <li>锂矿复产进度（高成本产能是否重新入市）</li>
+  <li>社会库存变化（去库速度是否持续）</li>
+</ul>
+
+<div class="footer">
+  <p>数据截止日期：2026 年 5 月 20 日</p>
+  <p>数据来源：GFEX、SMM、华福证券、华泰证券、瑞银</p>
+  <p>数据分析与经济决策（ds2026）小组作业 Team02</p>
+</div>
+
+</body>
+</html>
